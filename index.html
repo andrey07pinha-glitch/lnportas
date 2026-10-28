@@ -11,12 +11,12 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Porta de enrolar sob medida em Guarulhos | LN Portas">
 <meta property="og:description" content="Fabricação própria, medição no local, instalação e 12 meses de garantia. Monte sua porta e receba o orçamento no WhatsApp.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="img/obra-preta-2.jpg">
 <meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/obra-preta-2.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"LN Portas","description":"Fabricação e instalação de portas de enrolar sob medida","telephone":"+55-11-94144-5665","address":{"@type":"PostalAddress","streetAddress":"R. Mário Colozzi, 64 – Jardim Álamo","addressLocality":"Guarulhos","addressRegion":"SP","postalCode":"07176-690","addressCountry":"BR"},"openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-13:00"],"areaServed":"Guarulhos e região"}
 </script>
@@ -36,98 +36,119 @@ window.LN_SITE = {
 </script>
 <style>
 :root{
-  --navy:#0B1C5E; --navy2:#142B83; --navy3:#0A1648;
-  --steel:#C9CED6; --steel2:#E6E9ED; --paper:#F5F6F8; --white:#FFFFFF;
-  --ink:#1B2028; --muted:#4D5765; --line:#D7DBE1;
-  --signal:#F2B705; --signal2:#FFC81F; --wa:#1FAF54;
-  --f:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-  --r:10px; --wrap:1180px;
+  --navy:#0B1C5E; --navy2:#16307F; --navy-esc:#081443;
+  --ink:#1A1F29; --muted:#555F6E; --line:#DEE2E8; --soft:#F4F6F9; --white:#FFFFFF;
+  --prata:#B9C0CA; --wa:#1EA952; --wa2:#18924A;
+  --f:'Barlow',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --fc:'Barlow Semi Condensed','Barlow',system-ui,sans-serif;
+  --wrap:1160px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:var(--f);font-size:17px;line-height:1.55;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:var(--f);font-size:17px;line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--navy2)}
-:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
-h1,h2,h3{font-stretch:72%;font-weight:800;letter-spacing:-.005em;line-height:1.02;margin:0;color:var(--navy)}
-h2{font-size:clamp(34px,5vw,56px)}
-h3{font-size:24px;font-stretch:80%}
+:focus-visible{outline:3px solid #F2B705;outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--fc);font-weight:700;line-height:1.1;margin:0;color:var(--navy);letter-spacing:-.005em}
+h2{font-size:clamp(30px,3.6vw,42px)}
+h3{font-size:22px}
 p{margin:0}
-.lead{font-size:19px;color:var(--muted);max-width:60ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-section{scroll-margin-top:76px}
+.sub{font-size:18px;color:var(--muted);max-width:62ch;margin-top:12px}
+section{scroll-margin-top:90px}
+.ico{width:20px;height:20px;flex:none}
 
 /* botões */
-.bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);font:700 17px/1 var(--f);font-stretch:90%;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,transform .15s}
-.bt:active{transform:translateY(1px)}
-.bt svg{width:22px;height:22px;flex:none}
-.bt-sinal{background:var(--signal);color:var(--ink)}
-.bt-sinal:hover{background:var(--signal2)}
-.bt-linha{border-color:currentColor;color:var(--white);background:transparent}
-.bt-linha:hover{background:rgba(255,255,255,.1)}
+.bt{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:6px;font:600 17px/1 var(--f);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s}
+.bt-wa{background:var(--wa);color:#fff}
+.bt-wa:hover{background:var(--wa2)}
 .bt-navy{background:var(--navy);color:#fff}
 .bt-navy:hover{background:var(--navy2)}
+.bt-borda{border-color:var(--navy);color:var(--navy);background:#fff}
+.bt-borda:hover{background:var(--soft)}
+.bt-claro{border-color:rgba(255,255,255,.7);color:#fff}
+.bt-claro:hover{background:rgba(255,255,255,.1)}
+
+/* faixa de contato */
+.faixa{background:var(--navy-esc);color:#C9D1E8;font-size:14px}
+.faixa .wrap{display:flex;justify-content:space-between;gap:16px;min-height:38px;align-items:center}
+.faixa span{display:inline-flex;align-items:center;gap:7px}
+.faixa a{color:#fff;text-decoration:none}
+.faixa .dir{display:flex;gap:22px}
 
 /* topo */
-.topo{position:sticky;top:0;z-index:30;background:rgba(245,246,248,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
-.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.topo .logo img{height:40px;width:auto}
-.topo nav{display:flex;gap:26px;font-weight:600;font-size:15px}
+.topo{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.topo .logo img{height:44px;width:auto}
+.topo nav{display:flex;gap:28px;font-weight:500;font-size:16px}
 .topo nav a{color:var(--ink);text-decoration:none}
 .topo nav a:hover{color:var(--navy2)}
-.topo .bt{min-height:44px;padding:0 16px;font-size:15px}
+.topo .acoes{display:flex;align-items:center;gap:18px}
+.topo .tel{font-weight:700;color:var(--navy);text-decoration:none;font-size:17px;white-space:nowrap}
+.topo .bt{min-height:46px;padding:0 18px;font-size:16px}
 
-/* hero */
-.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(180deg,rgba(255,255,255,.035) 0 2px,transparent 2px 22px);pointer-events:none}
-.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:64px;padding-bottom:72px}
-.hero h1{color:#fff;font-size:clamp(46px,7.2vw,92px);font-stretch:66%;font-weight:850;line-height:.94;letter-spacing:-.01em}
-.hero .lead{color:#C7D0EA;margin-top:22px}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero .nota{margin-top:16px;font-size:14px;color:#AEB9DA}
-.porta-hero{position:relative;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);aspect-ratio:1600/1150;background:#E4E1DB}
-.porta-hero img{width:100%;height:100%;object-fit:cover}
-.porta-hero .cortina{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#9AA1AC 0 9px,#7D848F 9px 11px,#B6BCC5 11px 12px);animation:sobe 1.5s cubic-bezier(.65,0,.25,1) .35s forwards;box-shadow:inset 0 -14px 0 #5E6470}
-.porta-hero .etiqueta{position:absolute;left:14px;bottom:14px;background:rgba(11,28,94,.88);color:#fff;font-size:13px;padding:7px 11px;border-radius:6px}
-@keyframes sobe{to{transform:translateY(-101%)}}
-@media (prefers-reduced-motion:reduce){.porta-hero .cortina{display:none}html{scroll-behavior:auto}}
+/* abertura */
+.abre{background:var(--soft);border-bottom:1px solid var(--line)}
+.abre .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:56px;padding-bottom:64px}
+.abre h1{font-size:clamp(38px,4.6vw,56px)}
+.abre .sub{font-size:19px}
+.abre .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.selos{display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 0;padding:0;list-style:none;font-weight:500;color:var(--ink);font-size:16px}
+.selos li{display:flex;align-items:center;gap:8px}
+.selos svg{color:var(--wa)}
+.foto-abre{position:relative}
+.moldura{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(8,20,67,.45);background:#2a2f38}
+.moldura img{width:100%;aspect-ratio:1060/960;object-fit:cover}
+.foto-abre figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.94);color:var(--ink);font-size:14px;font-weight:500;padding:7px 12px;border-radius:5px}
 
 /* números */
-.fatos{background:var(--navy3);color:#fff}
-.fatos .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
-.fato{padding:26px 18px;border-left:1px solid rgba(255,255,255,.12)}
-.fato:first-child{border-left:0;padding-left:0}
-.fato b{display:block;font-size:40px;font-stretch:68%;font-weight:850;line-height:1;color:var(--signal)}
-.fato span{display:block;margin-top:6px;font-size:15px;color:#C7D0EA}
+.nums{border-bottom:1px solid var(--line)}
+.nums .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.num{padding:28px 20px;border-left:1px solid var(--line);text-align:center}
+.num:first-child{border-left:0}
+.num b{display:block;font-family:var(--fc);font-size:38px;line-height:1;color:var(--navy)}
+.num span{display:block;margin-top:6px;color:var(--muted);font-size:15px}
 
-/* casos */
-.bloco{padding:96px 0}
-.cab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:44px}
-.casos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.caso{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
-.caso img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.caso div{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
-.caso p{color:var(--muted);font-size:16px}
-.caso a{margin-top:auto;font-weight:700;text-decoration:none;color:var(--navy2);padding-top:6px}
-.caso a:hover{text-decoration:underline}
+/* blocos */
+.bloco{padding:88px 0}
+.bloco.cinza{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cab{max-width:720px;margin-bottom:40px}
+
+/* tipos de porta */
+.tipos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.tipo{border:1px solid var(--line);border-radius:8px;padding:28px;background:#fff;display:flex;flex-direction:column;gap:10px}
+.tipo svg{width:40px;height:40px;color:var(--navy2)}
+.tipo p{color:var(--muted);font-size:16px}
+.tipo ul{margin:4px 0 0;padding:0 0 0 18px;color:var(--ink);font-size:15.5px}
+.tipo a{margin-top:auto;padding-top:12px;font-weight:600;text-decoration:none}
+.tipo a:hover{text-decoration:underline}
+
+/* obras */
+.obras{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.obra{margin:0}
+.zoom{all:unset;display:block;cursor:zoom-in;border-radius:8px;overflow:hidden;width:100%}
+.zoom:focus-visible{outline:3px solid #F2B705;outline-offset:3px}
+.obra img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover img{transform:scale(1.04)}
+.obra figcaption{margin-top:12px;font-weight:600}
+.obra figcaption span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+.insta{margin-top:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--muted)}
 
 /* monte sua porta */
-.monte{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.monte-grade{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:start}
-.vitrine{position:sticky;top:92px}
-.vitrine canvas{width:100%;height:auto;border-radius:8px;background:#E4E1DB;display:block}
-.vitrine .medida{display:flex;justify-content:space-between;align-items:center;margin-top:14px;color:var(--muted);font-size:15px;gap:12px;flex-wrap:wrap}
-.vitrine .medida b{color:var(--navy);font-size:22px;font-stretch:75%}
-.vitrine .aviso{font-size:13px;color:var(--muted);margin-top:6px}
-form.cfg{display:flex;flex-direction:column;gap:26px}
-fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-legend{font-size:20px;font-weight:800;font-stretch:80%;color:var(--navy);padding:0;margin-bottom:12px}
+.monte-grade{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:start}
+.vitrine{position:sticky;top:100px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.vitrine canvas{width:100%;height:auto;border-radius:5px;background:#E4E1DB;display:block}
+.vitrine .medida{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted);font-size:15px;gap:12px;flex-wrap:wrap}
+.vitrine .medida b{color:var(--navy);font-size:20px}
+.vitrine .aviso{font-size:13px;color:var(--muted);margin-top:4px}
+form.cfg{display:flex;flex-direction:column;gap:24px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+legend{font-family:var(--fc);font-size:20px;font-weight:700;color:var(--navy);padding:0;margin-bottom:10px}
 .duas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .campo{display:flex;flex-direction:column;gap:6px}
 .campo label{font-size:14px;font-weight:600;color:var(--muted)}
-.campo input{font:500 18px var(--f);color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:8px;min-height:54px;padding:0 14px;width:100%}
-.campo input:focus{outline:none;border-color:var(--navy2);background:#fff;box-shadow:0 0 0 3px rgba(20,43,131,.15)}
+.campo input{font:500 17px var(--f);color:var(--ink);background:#fff;border:1.5px solid #CDD3DC;border-radius:6px;min-height:52px;padding:0 14px;width:100%}
+.campo input:focus{outline:none;border-color:var(--navy2);box-shadow:0 0 0 3px rgba(22,48,127,.14)}
 .campo .un{position:relative}
 .campo .un input{padding-right:40px}
 .campo .un span{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:600}
@@ -135,222 +156,302 @@ legend{font-size:20px;font-weight:800;font-stretch:80%;color:var(--navy);padding
 .opcoes.duas-op{grid-template-columns:repeat(2,minmax(0,1fr))}
 .op{position:relative}
 .op input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
-.op span{display:flex;flex-direction:column;gap:3px;justify-content:center;min-height:62px;padding:10px 14px;border:1.5px solid var(--line);border-radius:8px;background:var(--paper);font-weight:700;font-size:16px;line-height:1.2;transition:border-color .12s,background .12s}
-.op small{font-weight:500;color:var(--muted);font-size:13px}
-.op input:checked+span{border-color:var(--navy2);background:#EAF0FF;box-shadow:inset 0 0 0 1px var(--navy2)}
-.op input:focus-visible+span{outline:3px solid var(--signal);outline-offset:2px}
+.op span{display:flex;flex-direction:column;gap:2px;justify-content:center;min-height:58px;padding:9px 13px;border:1.5px solid #CDD3DC;border-radius:6px;background:#fff;font-weight:600;font-size:16px;line-height:1.2}
+.op small{font-weight:400;color:var(--muted);font-size:13.5px}
+.op input:checked+span{border-color:var(--navy2);background:#EEF2FB;box-shadow:inset 0 0 0 1px var(--navy2)}
+.op input:focus-visible+span{outline:3px solid #F2B705;outline-offset:2px}
 .cores{display:flex;flex-wrap:wrap;gap:10px}
-.cor{position:relative;width:46px;height:46px}
+.cor{position:relative;width:44px;height:44px}
 .cor input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
-.cor i{display:block;width:46px;height:46px;border-radius:50%;background:var(--c);border:3px solid #fff;box-shadow:0 0 0 1.5px var(--line)}
+.cor i{display:block;width:44px;height:44px;border-radius:50%;background:var(--c);border:3px solid #fff;box-shadow:0 0 0 1.5px #CDD3DC}
 .cor input:checked+i{box-shadow:0 0 0 3px var(--navy2)}
-.cor input:focus-visible+i{outline:3px solid var(--signal);outline-offset:3px}
+.cor input:focus-visible+i{outline:3px solid #F2B705;outline-offset:3px}
 .cor-nome{font-size:15px;color:var(--muted)}
 .cor-nome b{color:var(--ink)}
 .erro{color:#B4231C;font-size:14px;min-height:20px;margin:0}
-.enviar{width:100%;min-height:62px;font-size:19px}
-.enviar svg{width:26px;height:26px}
-.garantia-mini{font-size:14px;color:var(--muted);text-align:center;margin-top:-10px}
+.enviar{width:100%;min-height:58px;font-size:18px}
+.pequeno{font-size:14px;color:var(--muted);text-align:center;margin-top:-8px}
 
-/* passos */
-.passos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:p;border-top:3px solid var(--navy)}
-.passo{padding:26px 22px 0 0;position:relative}
-.passo::before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;font-size:19px;margin:-49px 0 18px}
-.passo h3{font-size:21px;margin-bottom:8px}
-.passo p{color:var(--muted);font-size:16px}
+/* como funciona */
+.passos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;list-style:none;padding:0;margin:0;counter-reset:p}
+.passo{position:relative;padding-top:58px}
+.passo::before{counter-increment:p;content:counter(p);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;border:2px solid var(--navy);color:var(--navy);font-weight:700;font-size:18px;display:grid;place-items:center;background:#fff}
+.passo::after{content:'';position:absolute;top:21px;left:52px;right:-14px;height:2px;background:var(--line)}
+.passo:last-child::after{display:none}
+.passo h3{font-size:19px;margin-bottom:6px}
+.passo p{color:var(--muted);font-size:15.5px}
 
-/* componentes */
-.tec{background:var(--navy);color:#fff}
-.tec h2{color:#fff}
-.tec .lead{color:#C7D0EA}
-.tec-grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:rgba(255,255,255,.12);border-radius:var(--r);overflow:hidden;margin-top:44px}
-.peca{background:var(--navy);padding:26px 26px 28px;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
-.peca svg{width:44px;height:44px;color:var(--signal)}
-.peca h3{color:#fff;font-size:22px;margin-bottom:6px}
-.peca p{color:#C7D0EA;font-size:16px}
+/* diferenciais */
+.difs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 48px}
+.dif{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start;padding:8px 0}
+.dif svg{width:36px;height:36px;color:var(--navy2)}
+.dif h3{font-size:20px;margin-bottom:4px}
+.dif p{color:var(--muted);font-size:16px}
+
+/* atendimento */
+.atende{display:grid;grid-template-columns:280px minmax(0,1fr);gap:48px;align-items:center}
+.atende img{border-radius:8px;width:100%;aspect-ratio:1/1;object-fit:cover}
+.atende ul{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.atende li{display:flex;gap:10px;align-items:center}
+.atende li svg{color:var(--wa)}
+.atende .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 
 /* condições */
-.cond{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.cond div{border-top:3px solid var(--signal);padding-top:18px}
-.cond h3{margin-bottom:8px}
-.cond p{color:var(--muted)}
+.cond{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.cond div{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px}
+.cond h3{margin-bottom:6px}
+.cond p{color:var(--muted);font-size:16px}
 
 /* faq */
 .faq{max-width:820px}
 .faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-weight:700;font-size:19px;position:relative}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;font-size:18px;position:relative}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:'';position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:2.5px solid var(--navy2);border-bottom:2.5px solid var(--navy2);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
-.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
-.faq details p{padding:0 0 22px;color:var(--muted);max-width:68ch}
+.faq summary::after{content:'+';position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400;color:var(--navy2)}
+.faq details[open] summary::after{content:'–'}
+.faq details p{padding:0 0 20px;color:var(--muted);max-width:68ch}
+
+/* local */
+.local{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:40px;align-items:stretch}
+.local dl{margin:0;display:grid;gap:16px}
+.local dt{font-weight:600;color:var(--navy)}
+.local dd{margin:2px 0 0;color:var(--muted)}
+.local iframe{width:100%;height:100%;min-height:320px;border:0;border-radius:8px;background:var(--soft)}
 
 /* chamada final */
-.final{background:var(--signal);color:var(--ink)}
-.final .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:32px;align-items:center;padding-top:64px;padding-bottom:64px}
-.final h2{color:var(--ink)}
-.final p{margin-top:12px;font-size:19px}
-.final .bt-navy{min-height:62px;font-size:19px;padding:0 30px}
+.final{background:var(--navy);color:#fff}
+.final .wrap{display:flex;justify-content:space-between;align-items:center;gap:28px;padding-top:56px;padding-bottom:56px;flex-wrap:wrap}
+.final h2{color:#fff}
+.final p{color:#C9D1E8;margin-top:8px;font-size:18px}
 
 /* rodapé */
-footer{background:var(--navy3);color:#C7D0EA;font-size:15px}
-footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px;padding-top:56px;padding-bottom:40px}
+footer{background:var(--navy-esc);color:#C9D1E8;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:32px;padding-top:52px;padding-bottom:36px}
 footer h3{color:#fff;font-size:18px;margin-bottom:10px}
 footer a{color:#fff}
 footer .logo img{height:44px;width:auto;margin-bottom:14px}
-.base{border-top:1px solid rgba(255,255,255,.12);padding:18px 0 96px;font-size:13px;color:#93A0C7}
+.base{border-top:1px solid rgba(255,255,255,.12);padding:16px 0 92px;font-size:13px;color:#93A0C7}
 .base .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:0;padding-bottom:0}
-.base button{background:none;border:0;color:#C7D0EA;text-decoration:underline;font:inherit;cursor:pointer;padding:0}
+.base button{background:none;border:0;color:#C9D1E8;text-decoration:underline;font:inherit;cursor:pointer;padding:0}
 
-/* whatsapp flutuante e barra do celular */
-.wa-flut{position:fixed;right:20px;bottom:20px;z-index:40;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px -6px rgba(0,0,0,.4)}
-.wa-flut svg{width:34px;height:34px;color:#fff}
+/* whatsapp fixo */
+.wa-flut{position:fixed;right:20px;bottom:20px;z-index:40;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 22px -6px rgba(0,0,0,.4)}
+.wa-flut svg{width:32px;height:32px;color:#fff}
 .barra{display:none}
 
 /* privacidade e cookies */
-dialog{border:0;border-radius:12px;max-width:640px;width:calc(100% - 32px);padding:28px;color:var(--ink)}
-dialog::backdrop{background:rgba(10,22,72,.55)}
-dialog h2{font-size:34px;margin-bottom:14px}
+dialog{border:0;border-radius:10px;max-width:640px;width:calc(100% - 32px);padding:28px;color:var(--ink)}
+dialog::backdrop{background:rgba(8,20,67,.55)}
+dialog h2{font-size:30px;margin-bottom:12px}
 dialog p{color:var(--muted);margin-bottom:12px;font-size:16px}
-.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:560px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 14px 40px -12px rgba(0,0,0,.35);display:none;gap:12px;flex-direction:column;font-size:15px}
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:540px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;box-shadow:0 14px 40px -12px rgba(0,0,0,.35);display:none;gap:12px;flex-direction:column;font-size:15px}
 .cookies.on{display:flex}
 .cookies .acoes{display:flex;gap:10px;flex-wrap:wrap}
-.cookies .bt{min-height:44px;font-size:15px;padding:0 18px}
-.cookies .bt-claro{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.cookies .bt{min-height:42px;font-size:15px;padding:0 18px}
 
-/* responsivo */
-@media (max-width:960px){
-  .topo nav{display:none}
-  .hero .wrap{grid-template-columns:1fr;gap:34px;padding-top:40px;padding-bottom:48px}
-  .cab{grid-template-columns:1fr;gap:16px}
-  .casos{grid-template-columns:1fr}
-  .monte-grade{grid-template-columns:1fr;gap:28px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ===== movimento ===== */
+.moldura .cortina{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#9AA1AC 0 10px,#7C838E 10px 12px,#B9BFC8 12px 13px);box-shadow:inset 0 -16px 0 #4E545E;animation:sobe 1.7s cubic-bezier(.65,0,.25,1) .45s forwards}
+@keyframes sobe{to{transform:translateY(-101%)}}
+.entra{opacity:0;transform:translateY(16px);animation:entra .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+@keyframes entra{to{opacity:1;transform:none}}
+[data-anima]{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+[data-anima].visivel{opacity:1;transform:none}
+.topo{transition:box-shadow .25s}
+.topo.rolou{box-shadow:0 6px 18px -10px rgba(8,20,67,.35)}
+.bt{transition:background .15s,transform .15s,box-shadow .15s}
+.bt:hover{transform:translateY(-1px);box-shadow:0 8px 18px -10px rgba(8,20,67,.5)}
+.bt:active{transform:none;box-shadow:none}
+.tipo{transition:border-color .2s,box-shadow .2s,transform .2s}
+.tipo:hover{border-color:#B9C3D6;box-shadow:0 14px 30px -20px rgba(8,20,67,.45);transform:translateY(-3px)}
+.wa-flut::after{content:'';position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(30,169,82,.55);animation:pulso 2.8s ease-out 2s infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(30,169,82,.55)}70%{box-shadow:0 0 0 16px rgba(30,169,82,0)}100%{box-shadow:0 0 0 0 rgba(30,169,82,0)}}
+.passo::after{transform-origin:left;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.7,.2,1) .3s}
+.passos.visivel .passo::after{transform:scaleX(1)}
+dialog.foto{padding:0;max-width:min(1100px,94vw);width:auto;background:transparent;overflow:visible}
+dialog.foto img{max-height:86vh;width:auto;border-radius:8px}
+dialog.foto button{position:absolute;top:-46px;right:0;background:#fff;border:0;border-radius:6px;font:600 15px var(--f);padding:9px 14px;cursor:pointer}
+dialog.foto[open]{animation:abre .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes abre{from{opacity:0;transform:scale(.96)}}
+@media (prefers-reduced-motion:reduce){
+  .moldura .cortina{display:none}
+  .entra,[data-anima]{opacity:1;transform:none;animation:none;transition:none}
+  .wa-flut::after{animation:none}
+  .passo::after{transform:none}
+  .bt:hover,.tipo:hover,.zoom:hover img{transform:none}
+}
+@media (max-width:980px){.passo::after{transform:scaleY(0);transform-origin:top}.passos.visivel .passo::after{transform:scaleY(1)}}
+
+@media (max-width:980px){
+  .faixa .esq{display:none}.faixa .wrap{justify-content:center}
+  .topo nav,.topo .tel{display:none}
+  .abre .wrap{grid-template-columns:1fr;gap:32px;padding-top:36px;padding-bottom:44px}
+  .tipos,.cond{grid-template-columns:1fr}
+  .monte-grade{grid-template-columns:1fr;gap:20px}
   .vitrine{position:static}
-  .passos{grid-template-columns:1fr;border-top:0;border-left:3px solid var(--navy);margin-left:20px}
-  .passo{padding:0 0 30px 34px}
-  .passo::before{position:absolute;left:-24px;top:-4px;margin:0}
-  .tec-grade{grid-template-columns:1fr}
-  .cond{grid-template-columns:1fr}
-  .final .wrap{grid-template-columns:1fr}
+  .passos{grid-template-columns:1fr;gap:0}
+  .passo{padding:0 0 26px 60px}
+  .passo::after{top:46px;left:20px;right:auto;width:2px;height:calc(100% - 50px)}
+  .difs{grid-template-columns:1fr}
+  .atende{grid-template-columns:1fr;gap:24px}
+  .atende img{max-width:260px}
+  .local{grid-template-columns:1fr}
   footer .wrap{grid-template-columns:1fr 1fr}
 }
 @media (max-width:620px){
   body{font-size:16px}
   .wrap{padding:0 18px}
-  .bloco{padding:64px 0}
+  .bloco{padding:60px 0}
+  .faixa .dir{gap:14px;font-size:13px}
+  .topo .wrap{height:66px}
+  .topo .logo img{height:38px}
   .topo .bt span{display:none}
-  .topo .bt{width:48px;padding:0}
-  .hero .ctas .bt{width:100%}
-  .fatos .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .fato{padding:18px 12px;border-left:0;border-top:1px solid rgba(255,255,255,.12)}
-  .fato:nth-child(-n+2){border-top:0}
-  .fato:nth-child(odd){padding-left:0}
+  .topo .bt{width:46px;padding:0}
+  .abre .ctas .bt{width:100%}
+  .nums .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .num{border-left:0;border-top:1px solid var(--line);padding:20px 10px}
+  .num:nth-child(-n+2){border-top:0}
+  .num:nth-child(even){border-left:1px solid var(--line)}
+  .obras{grid-template-columns:1fr}
+  form.cfg{padding:20px}
   .opcoes{grid-template-columns:1fr 1fr}
   .opcoes .op:last-child:nth-child(odd){grid-column:1/-1}
   footer .wrap{grid-template-columns:1fr}
   .wa-flut{display:none}
-  .barra{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}
+  .barra{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
   .barra .bt{flex:1;min-height:50px;font-size:16px;padding:0 10px}
-  .barra .bt-wa{background:var(--wa);color:#fff}
   .cookies{bottom:84px}
 }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-local" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+</svg>
+
+<div class="faixa">
+  <div class="wrap">
+    <span class="esq"><svg class="ico" aria-hidden="true"><use href="#i-local"/></svg>R. Mário Colozzi, 64 – Jardim Álamo, Guarulhos/SP</span>
+    <div class="dir">
+      <span><svg class="ico" aria-hidden="true"><use href="#i-relogio"/></svg>Seg a sex 8h–18h · Sáb 8h–13h</span>
+      <a href="https://instagram.com/ln.serralheria" target="_blank" rel="noopener">@ln.serralheria</a>
+    </div>
+  </div>
+</div>
 
 <header class="topo">
   <div class="wrap">
-    <a class="logo" href="#inicio" aria-label="LN Portas, início"><img src="img/logo.svg" alt="LN Portas" width="77" height="40"></a>
+    <a class="logo" href="#inicio" aria-label="LN Portas, início"><img src="img/logo.svg" alt="LN Portas" width="85" height="44"></a>
     <nav aria-label="Seções">
+      <a href="#portas">Portas</a>
+      <a href="#obras">Obras</a>
       <a href="#monte">Monte sua porta</a>
       <a href="#como-funciona">Como funciona</a>
-      <a href="#garantia">Garantia</a>
-      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <a class="bt bt-sinal" href="#" data-wa="topo" aria-label="Pedir orçamento no WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></svg>
-      <span>Orçamento no WhatsApp</span>
-    </a>
+    <div class="acoes">
+      <a class="tel" href="tel:+5511941445665">(11) 94144-5665</a>
+      <a class="bt bt-wa" href="#" data-wa="topo" aria-label="Pedir orçamento no WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Pedir orçamento</span></a>
+    </div>
   </div>
 </header>
 
 <main id="inicio">
-  <section class="hero" aria-labelledby="titulo">
+  <section class="abre" aria-labelledby="titulo">
     <div class="wrap">
       <div>
-        <h1 id="titulo">Porta de enrolar sob medida, feita na nossa fábrica em Guarulhos.</h1>
-        <p class="lead">A gente mede no local, fabrica e instala. O motor é escolhido pelo peso real da sua porta, e tudo sai com 12 meses de garantia por escrito.</p>
-        <div class="ctas">
-          <a class="bt bt-sinal" href="#" data-wa="hero">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></svg>
-            Pedir orçamento no WhatsApp
-          </a>
-          <a class="bt bt-linha" href="#monte">Montar minha porta</a>
+        <h1 id="titulo" class="entra" style="--d:.1s">Portas de enrolar sob medida em Guarulhos</h1>
+        <p class="sub entra" style="--d:.25s">Fabricação própria, medição no local e instalação feita pela nossa equipe. Automáticas ou manuais, para comércio, indústria e residência.</p>
+        <div class="ctas entra" style="--d:.4s">
+          <a class="bt bt-wa" href="#" data-wa="abertura"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento no WhatsApp</a>
+          <a class="bt bt-borda" href="#monte">Simular minha porta</a>
         </div>
-        <p class="nota">Orçamento sem compromisso. Atendemos Guarulhos e região.</p>
+        <ul class="selos entra" style="--d:.55s">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>Fabricação própria</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>Medição no local</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>12 meses de garantia</li>
+        </ul>
       </div>
-      <div class="porta-hero">
-        <img src="img/hero.jpg" alt="Ilustração de porta de enrolar azul-marinho fechada numa fachada" width="1600" height="1150" fetchpriority="high">
-        <div class="cortina" aria-hidden="true"></div>
-        <span class="etiqueta">Imagem ilustrativa</span>
-      </div>
+      <figure class="foto-abre" style="margin:0">
+        <div class="moldura">
+          <img src="img/obra-preta-2.jpg" alt="Duas portas de enrolar pretas instaladas em um prédio comercial novo" width="1060" height="960" fetchpriority="high">
+          <div class="cortina" aria-hidden="true"></div>
+        </div>
+        <figcaption>Portas automáticas instaladas pela LN</figcaption>
+      </figure>
     </div>
   </section>
 
-  <div class="fatos">
+  <div class="nums">
     <div class="wrap">
-      <div class="fato"><b>5 anos</b><span>fabricando portas</span></div>
-      <div class="fato"><b>+1.500</b><span>clientes atendidos</span></div>
-      <div class="fato"><b>+800</b><span>projetos entregues</span></div>
-      <div class="fato"><b>12 meses</b><span>de garantia por escrito</span></div>
+      <div class="num"><b>5 anos</b><span>no mercado</span></div>
+      <div class="num"><b>+1.500</b><span>clientes atendidos</span></div>
+      <div class="num"><b>+800</b><span>projetos entregues</span></div>
+      <div class="num"><b>12 meses</b><span>de garantia</span></div>
     </div>
   </div>
 
-  <section class="bloco" aria-labelledby="t-casos">
+  <section class="bloco" id="portas" aria-labelledby="t-portas">
     <div class="wrap">
       <div class="cab">
-        <h2 id="t-casos">Uma porta certa para cada vão.</h2>
-        <p class="lead">Loja de rua, galpão ou garagem: cada porta é dimensionada para a largura, a altura e o uso do seu espaço.</p>
+        <h2 id="t-portas">Portas para cada tipo de obra</h2>
+        <p class="sub">Cada porta é fabricada na medida do vão, com chapa, eixo e motor definidos pelo tamanho e pelo uso.</p>
       </div>
-      <div class="casos">
-        <article class="caso">
-          <img src="img/comercio.jpg" alt="Ilustração de porta de enrolar preta com lâmina transvision" loading="lazy" width="1200" height="900">
-          <div>
-            <h3>Loja e comércio</h3>
-            <p>Automática, com controle remoto, para abrir e fechar todo dia sem esforço. A lâmina transvision deixa a vitrine à mostra com a loja fechada.</p>
-            <a href="#" data-wa="caso-comercio" data-msg="Olá! Quero um orçamento de porta de enrolar para a minha loja.">Orçamento para loja</a>
-          </div>
+      <div class="tipos">
+        <article class="tipo">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 16h30v19H5zM3 16l4-9h26l4 9"/><path d="M9 21h22M9 25h22M9 29h22"/></svg>
+          <h3>Comércio</h3>
+          <p>Para lojas, mercados e fachadas de rua.</p>
+          <ul><li>Automática com controle remoto</li><li>Lâmina transvision para vitrine</li><li>Portinhola de passagem</li></ul>
+          <a href="#" data-wa="tipo-comercio" data-msg="Olá! Quero um orçamento de porta de enrolar para comércio.">Orçamento para comércio</a>
         </article>
-        <article class="caso">
-          <img src="img/galpao.jpg" alt="Ilustração de porta de enrolar grande galvanizada" loading="lazy" width="1200" height="900">
-          <div>
-            <h3>Galpão e indústria</h3>
-            <p>Vãos grandes com chapa mais grossa, eixo reforçado e motor dimensionado para a carga. Ideal para doca e depósito.</p>
-            <a href="#" data-wa="caso-galpao" data-msg="Olá! Quero um orçamento de porta de enrolar para galpão.">Orçamento para galpão</a>
-          </div>
+        <article class="tipo">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 35V14l17-9 17 9v21"/><path d="M10 35V20h20v15M10 24h20M10 28h20M10 32h20"/></svg>
+          <h3>Indústria e galpão</h3>
+          <p>Para docas, depósitos e vãos grandes.</p>
+          <ul><li>Chapa mais grossa e eixo reforçado</li><li>Motor dimensionado para o peso</li><li>Vãos largos sob medida</li></ul>
+          <a href="#" data-wa="tipo-galpao" data-msg="Olá! Quero um orçamento de porta de enrolar para galpão.">Orçamento para galpão</a>
         </article>
-        <article class="caso">
-          <img src="img/residencia.jpg" alt="Ilustração de porta de enrolar branca com portinhola" loading="lazy" width="1200" height="900">
-          <div>
-            <h3>Garagem e residência</h3>
-            <p>Na cor da sua fachada, com portinhola para passar sem abrir a porta toda. Silenciosa e segura.</p>
-            <a href="#" data-wa="caso-residencia" data-msg="Olá! Quero um orçamento de porta de enrolar para a minha garagem.">Orçamento para garagem</a>
-          </div>
+        <article class="tipo">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 18 20 6l16 12M8 15v20h24V15"/><path d="M13 35V22h14v13M13 26h14M13 30h14"/></svg>
+          <h3>Residência</h3>
+          <p>Para garagens e áreas de serviço.</p>
+          <ul><li>Pintura na cor da fachada</li><li>Funcionamento silencioso</li><li>Opção manual ou automática</li></ul>
+          <a href="#" data-wa="tipo-residencia" data-msg="Olá! Quero um orçamento de porta de enrolar para a minha garagem.">Orçamento para residência</a>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="bloco monte" id="monte" aria-labelledby="t-monte">
+  <section class="bloco cinza" id="obras" aria-labelledby="t-obras">
     <div class="wrap">
       <div class="cab">
-        <h2 id="t-monte">Monte sua porta e receba o orçamento.</h2>
-        <p class="lead">Escolha medida, lâmina e cor. Você vê como fica e manda tudo pronto para o nosso WhatsApp, sem precisar explicar de novo.</p>
+        <h2 id="t-obras">Obras realizadas</h2>
+        <p class="sub">Algumas portas fabricadas e instaladas pela nossa equipe.</p>
+      </div>
+      <div class="obras">
+        <figure class="obra"><button class="zoom" type="button" data-foto="img/obra-azul.jpg" aria-label="Ampliar foto: porta azul com portinhola e bandeira"><img src="img/obra-azul.jpg" alt="Porta de enrolar azul com portinhola e bandeira" loading="lazy" width="1122" height="1100"></button><figcaption>Porta azul com portinhola e bandeira<span>Pintura eletrostática na cor escolhida pelo cliente</span></figcaption></figure>
+        <figure class="obra"><button class="zoom" type="button" data-foto="img/obra-preta-1.jpg" aria-label="Ampliar foto: portas pretas em prédio comercial"><img src="img/obra-preta-1.jpg" alt="Portas de enrolar pretas em prédio comercial novo" loading="lazy" width="1058" height="1180"></button><figcaption>Prédio comercial novo<span>Duas portas pretas de vão largo</span></figcaption></figure>
+      </div>
+      <p class="insta">Veja mais obras no Instagram: <a href="https://instagram.com/ln.serralheria" target="_blank" rel="noopener"><b>@ln.serralheria</b></a></p>
+    </div>
+  </section>
+
+  <section class="bloco" id="monte" aria-labelledby="t-monte">
+    <div class="wrap">
+      <div class="cab">
+        <h2 id="t-monte">Simule sua porta e peça o orçamento</h2>
+        <p class="sub">Informe a medida e escolha as opções. O pedido chega pronto no nosso WhatsApp, e respondemos com o valor.</p>
       </div>
       <div class="monte-grade">
         <div class="vitrine">
-          <canvas id="previa" width="1100" height="790" role="img" aria-label="Prévia da porta com as opções escolhidas"></canvas>
+          <canvas id="previa" width="1100" height="790" role="img" aria-label="Simulação da porta com as opções escolhidas"></canvas>
           <div class="medida"><span>Vão de <b id="v-medida">3,00 × 3,00 m</b></span><span id="v-desc">Lâmina fechada, galvanizada</span></div>
-          <p class="aviso">Imagem ilustrativa. As medidas finais são conferidas na visita técnica.</p>
+          <p class="aviso">Simulação ilustrativa. As medidas finais são conferidas na visita técnica.</p>
         </div>
 
         <form class="cfg" id="cfg" novalidate>
@@ -361,7 +462,6 @@ dialog p{color:var(--muted);margin-bottom:12px;font-size:16px}
               <div class="campo"><label for="f-h">Altura</label><div class="un"><input id="f-h" name="altura" inputmode="decimal" value="3,00" autocomplete="off"><span>m</span></div></div>
             </div>
           </fieldset>
-
           <fieldset>
             <legend>Tipo de lâmina</legend>
             <div class="opcoes">
@@ -370,143 +470,163 @@ dialog p{color:var(--muted);margin-bottom:12px;font-size:16px}
               <label class="op"><input type="radio" name="lamina" value="Perfurada" data-id="lam-perf22"><span>Perfurada<small>Ventilação</small></span></label>
             </div>
           </fieldset>
-
           <fieldset>
             <legend>Cor</legend>
             <div class="cores" id="cores"></div>
             <p class="cor-nome">Escolhida: <b id="cor-nome">Galvanizada (sem pintura)</b></p>
           </fieldset>
-
           <fieldset>
-            <legend>Como abre</legend>
+            <legend>Acionamento</legend>
             <div class="opcoes duas-op">
               <label class="op"><input type="radio" name="acionamento" value="Automática" checked><span>Automática<small>Motor e controle remoto</small></span></label>
               <label class="op"><input type="radio" name="acionamento" value="Manual"><span>Manual<small>Com molas</small></span></label>
             </div>
           </fieldset>
-
           <fieldset>
-            <legend>Extras</legend>
+            <legend>Opcionais</legend>
             <div class="opcoes duas-op">
               <label class="op"><input type="checkbox" name="extras" value="Portinhola"><span>Portinhola<small>Passagem de pessoas</small></span></label>
-              <label class="op"><input type="checkbox" name="extras" value="Bandeira"><span>Bandeira<small>Fecha acima do vão</small></span></label>
+              <label class="op"><input type="checkbox" name="extras" value="Bandeira"><span>Bandeira<small>Fechamento acima do vão</small></span></label>
             </div>
           </fieldset>
-
           <fieldset>
             <legend>Seus dados</legend>
-            <div class="campo"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+            <div class="campo"><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
             <div class="duas">
               <div class="campo"><label for="f-tel">WhatsApp</label><input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required></div>
               <div class="campo"><label for="f-cid">Cidade ou bairro</label><input id="f-cid" name="cidade" autocomplete="address-level2" placeholder="Ex.: Guarulhos"></div>
             </div>
           </fieldset>
-
           <p class="erro" id="f-erro" role="alert"></p>
-          <button class="bt bt-sinal enviar" type="submit">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></svg>
-            Receber orçamento no WhatsApp
-          </button>
-          <p class="garantia-mini">Sem compromisso. Seus dados são usados só para responder o seu pedido.</p>
+          <button class="bt bt-wa enviar" type="submit"><svg class="ico" aria-hidden="true" style="width:24px;height:24px"><use href="#i-wa"/></svg>Enviar pedido pelo WhatsApp</button>
+          <p class="pequeno">Orçamento sem compromisso. Seus dados são usados só para responder o seu pedido.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="como-funciona" aria-labelledby="t-passos">
+  <section class="bloco cinza" id="como-funciona" aria-labelledby="t-passos">
     <div class="wrap">
       <div class="cab">
-        <h2 id="t-passos">Do pedido à porta funcionando.</h2>
-        <p class="lead">Você fala com a gente do começo ao fim. Prazo de até 20 dias úteis depois da aprovação e da conferência das medidas.</p>
+        <h2 id="t-passos">Como funciona</h2>
+        <p class="sub">Prazo de até 20 dias úteis depois da aprovação da proposta e da conferência das medidas.</p>
       </div>
-      <ol class="passos" style="list-style:none;padding:0;margin:56px 0 0">
-        <li class="passo"><h3>Você manda as medidas</h3><p>Pelo WhatsApp ou pelo "Monte sua porta". Fotos do local ajudam.</p></li>
-        <li class="passo"><h3>Medição no local</h3><p>Conferimos o vão e se a porta fica atrás ou dentro dele.</p></li>
-        <li class="passo"><h3>Proposta com desenho</h3><p>Você recebe a proposta com desenho da porta, itens e valor.</p></li>
-        <li class="passo"><h3>Fabricação própria</h3><p>Lâminas, guias e eixo cortados na medida do seu vão.</p></li>
-        <li class="passo"><h3>Instalação e garantia</h3><p>Instalamos, testamos com você e entregamos o termo de garantia.</p></li>
+      <ol class="passos">
+        <li class="passo"><h3>Contato</h3><p>Você manda as medidas ou fotos do local pelo WhatsApp.</p></li>
+        <li class="passo"><h3>Medição</h3><p>Conferimos o vão no local antes de fabricar.</p></li>
+        <li class="passo"><h3>Proposta</h3><p>Você recebe a proposta com desenho, itens e valor.</p></li>
+        <li class="passo"><h3>Fabricação</h3><p>Lâminas, guias e eixo cortados na medida do vão.</p></li>
+        <li class="passo"><h3>Instalação</h3><p>Instalamos, testamos e entregamos o termo de garantia.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="bloco tec" aria-labelledby="t-tec">
+  <section class="bloco" aria-labelledby="t-difs">
     <div class="wrap">
       <div class="cab">
-        <h2 id="t-tec">Calculada peça por peça.</h2>
-        <p class="lead">Porta de enrolar que trava ou força o motor quase sempre foi mal dimensionada. Aqui cada peça é calculada para o seu vão.</p>
+        <h2 id="t-difs">Por que escolher a LN Portas</h2>
       </div>
-      <div class="tec-grade">
-        <div class="peca"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 12h36M6 19h36M6 26h36M6 33h36M6 40h36"/></svg><div><h3>Lâminas de aço galvanizado</h3><p>Chapa escolhida pela largura do vão, com trava-lâminas nas laterais para não sair da guia.</p></div></div>
-        <div class="peca"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="5"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6"/></svg><div><h3>Motor com folga de força</h3><p>Calculamos o peso real da cortina e escolhemos um motor com sobra de capacidade.</p></div></div>
-        <div class="peca"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="6" y="18" width="36" height="12" rx="6"/><path d="M14 18v12M34 18v12"/></svg><div><h3>Eixo e suportes reforçados</h3><p>Diâmetro do eixo definido pelo peso e pela largura, para a porta enrolar sem barriga.</p></div></div>
-        <div class="peca"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 6v36M36 6v36M12 42h24"/><path d="M18 14h12M18 22h12M18 30h12"/></svg><div><h3>Guias e vedação</h3><p>Guias na medida da porta, com vedação em PVC e borracha na soleira contra vento e poeira.</p></div></div>
+      <div class="difs">
+        <div class="dif"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 30V14l7 4v-4l7 4v-4l7 4V6h7v24z"/></svg><div><h3>Fabricação própria</h3><p>A porta é feita na nossa fábrica em Guarulhos, sem intermediário.</p></div></div>
+        <div class="dif"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 26 26 5l5 5L10 31H5z"/><path d="M21 10l5 5"/></svg><div><h3>Medida conferida no local</h3><p>Nada de porta que não fecha direito: medimos antes de cortar.</p></div></div>
+        <div class="dif"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="18" r="12"/><circle cx="18" cy="18" r="4"/><path d="M18 3v5M18 28v5M3 18h5M28 18h5"/></svg><div><h3>Motor certo para o peso</h3><p>Calculamos o peso da porta e escolhemos o motor com folga de força.</p></div></div>
+        <div class="dif"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 4l12 4v9c0 8-5.5 12.5-12 15-6.5-2.5-12-7-12-15V8z"/><path d="M12.5 18l4 4 7-8"/></svg><div><h3>Garantia por escrito</h3><p>12 meses de garantia, com o termo entregue junto da proposta.</p></div></div>
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="garantia" aria-labelledby="t-gar">
+  <section class="bloco cinza" id="garantia" aria-labelledby="t-cond">
     <div class="wrap">
-      <div class="cab">
-        <h2 id="t-gar">Sem surpresa depois.</h2>
-        <p class="lead">Tudo o que combinamos fica na proposta: itens, prazo, valor e garantia.</p>
-      </div>
+      <div class="cab"><h2 id="t-cond">Condições</h2></div>
       <div class="cond">
-        <div><h3>12 meses de garantia</h3><p>Garantia por escrito para lâminas, guias, eixo, soleira, pintura e instalação, além da garantia legal.</p></div>
-        <div><h3>Pagamento facilitado</h3><p>50% na aprovação e 50% quando a porta estiver instalada. Pix ou cartão.</p></div>
-        <div><h3>Prazo combinado</h3><p>Até 20 dias úteis depois da aprovação da proposta e da conferência das medidas no local.</p></div>
+        <div><h3>Garantia</h3><p>12 meses para lâminas, guias, eixo, soleira, pintura e instalação, além da garantia legal.</p></div>
+        <div><h3>Pagamento</h3><p>50% na aprovação e 50% na conclusão da instalação, no Pix ou no cartão.</p></div>
+        <div><h3>Prazo</h3><p>Até 20 dias úteis após a aprovação da proposta e a conferência das medidas.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="duvidas" aria-labelledby="t-faq" style="padding-top:0">
+  <section class="bloco" aria-labelledby="t-atende">
+    <div class="wrap atende">
+      <img src="img/atendimento.jpg" alt="Consultor da LN Portas" width="640" height="640" loading="lazy">
+      <div>
+        <h2 id="t-atende">Fale direto com quem fabrica</h2>
+        <p class="sub">Você é atendido pela equipe da LN, do primeiro contato até a instalação. Sem central de atendimento e sem repasse para terceiros.</p>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>Orçamento sem compromisso</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>Visita técnica para medir o vão</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-ok"/></svg>Proposta com desenho da porta</li>
+        </ul>
+        <div class="ctas">
+          <a class="bt bt-wa" href="#" data-wa="atendimento"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+          <a class="bt bt-borda" href="tel:+5511941445665"><svg class="ico" aria-hidden="true"><use href="#i-tel"/></svg>(11) 94144-5665</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco cinza" id="duvidas" aria-labelledby="t-faq">
     <div class="wrap">
-      <h2 id="t-faq" style="margin-bottom:24px">Dúvidas frequentes</h2>
+      <div class="cab"><h2 id="t-faq">Perguntas frequentes</h2></div>
       <div class="faq">
-        <details><summary>Quanto custa uma porta de enrolar?</summary><p>Depende da largura, da altura, do tipo de lâmina, da pintura e do motor. Mande as medidas pelo "Monte sua porta" ou pelo WhatsApp e respondemos com o valor.</p></details>
-        <details><summary>Vocês fazem a medição?</summary><p>Sim. Antes de fabricar, conferimos o vão no local. Assim a porta sai certa na primeira vez.</p></details>
+        <details><summary>Quanto custa uma porta de enrolar?</summary><p>Depende da largura, da altura, do tipo de lâmina, da pintura e do motor. Mande as medidas pela simulação ou pelo WhatsApp e respondemos com o valor.</p></details>
+        <details><summary>Vocês fazem a medição?</summary><p>Sim. Antes de fabricar, conferimos o vão no local para a porta sair certa.</p></details>
         <details><summary>A porta fica dentro ou atrás do vão?</summary><p>Os dois jeitos funcionam. Atrás do vão leva só as guias. Dentro do vão normalmente leva um perfil telescópico. Na medição indicamos o melhor para o seu caso.</p></details>
         <details><summary>Qual o prazo de entrega?</summary><p>Até 20 dias úteis depois da aprovação da proposta e da conferência das medidas.</p></details>
-        <details><summary>Como funciona a garantia?</summary><p>São 12 meses de garantia por escrito, contados da instalação, além da garantia legal. O termo de garantia vai junto com a proposta.</p></details>
+        <details><summary>Como funciona a garantia?</summary><p>São 12 meses de garantia por escrito, contados da instalação, além da garantia legal.</p></details>
         <details><summary>Quais formas de pagamento?</summary><p>50% de entrada na aprovação e 50% na conclusão da instalação, no Pix ou no cartão.</p></details>
         <details><summary>Quais cidades vocês atendem?</summary><p>Guarulhos e região. Fale com a gente para confirmar o seu endereço.</p></details>
       </div>
     </div>
   </section>
 
+  <section class="bloco" id="contato" aria-labelledby="t-local">
+    <div class="wrap local">
+      <div>
+        <h2 id="t-local" style="margin-bottom:24px">Onde estamos</h2>
+        <dl>
+          <div><dt>Endereço</dt><dd>R. Mário Colozzi, 64 – Jardim Álamo<br>Guarulhos/SP – CEP 07176-690</dd></div>
+          <div><dt>Telefone e WhatsApp</dt><dd><a href="#" data-wa="local">(11) 94144-5665</a> · <a href="tel:+5511972471301">(11) 97247-1301</a></dd></div>
+          <div><dt>Horário</dt><dd>Segunda a sexta, das 8h às 18h<br>Sábado, das 8h às 13h</dd></div>
+        </dl>
+      </div>
+      <iframe title="Mapa com o endereço da LN Portas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+M%C3%A1rio+Colozzi,+64+-+Jardim+%C3%81lamo,+Guarulhos+-+SP,+07176-690&amp;output=embed"></iframe>
+    </div>
+  </section>
+
   <section class="final" aria-labelledby="t-final">
     <div class="wrap">
       <div>
-        <h2 id="t-final">Mande as medidas e receba seu orçamento.</h2>
-        <p>Atendemos de segunda a sexta, das 8h às 18h, e aos sábados, das 8h às 13h.</p>
+        <h2 id="t-final">Peça seu orçamento</h2>
+        <p>Mande as medidas do vão e receba a proposta com o valor.</p>
       </div>
-      <a class="bt bt-navy" href="#" data-wa="final">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></svg>
-        Chamar no WhatsApp
-      </a>
+      <a class="bt bt-wa" href="#" data-wa="final" style="min-height:58px;font-size:18px"><svg class="ico" aria-hidden="true" style="width:24px;height:24px"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div><a class="logo" href="#inicio"><img src="img/logo-branco.svg" alt="LN Portas" width="85" height="44"></a><p>Mais que portas, soluções que abrem caminhos. Fabricação própria em Guarulhos.</p></div>
-    <div><h3>Fale com a gente</h3><p><a href="#" data-wa="rodape">(11) 94144-5665</a><br><a href="tel:+5511972471301">(11) 97247-1301</a><br><a href="https://instagram.com/ln.serralheria" target="_blank" rel="noopener">@ln.serralheria</a></p></div>
-    <div><h3>Endereço</h3><p>R. Mário Colozzi, 64<br>Jardim Álamo, Guarulhos/SP<br>CEP 07176-690<br><a href="https://www.google.com/maps/search/?api=1&amp;query=R.+M%C3%A1rio+Colozzi%2C+64+Guarulhos" target="_blank" rel="noopener">Ver no mapa</a></p></div>
+    <div><a class="logo" href="#inicio"><img src="img/logo-branco.svg" alt="LN Portas" width="85" height="44"></a><p>Portas de enrolar sob medida. Fabricação própria em Guarulhos.</p></div>
+    <div><h3>Contato</h3><p><a href="#" data-wa="rodape">(11) 94144-5665</a><br><a href="tel:+5511972471301">(11) 97247-1301</a><br><a href="https://instagram.com/ln.serralheria" target="_blank" rel="noopener">@ln.serralheria</a></p></div>
+    <div><h3>Endereço</h3><p>R. Mário Colozzi, 64<br>Jardim Álamo, Guarulhos/SP<br>CEP 07176-690</p></div>
     <div><h3>Horário</h3><p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 13h</p></div>
   </div>
-  <div class="base"><div class="wrap"><span>© <span id="ano">2026</span> LN Portas. Imagens das portas são ilustrativas.</span><button type="button" id="abrir-priv">Política de privacidade</button></div></div>
+  <div class="base"><div class="wrap"><span>© <span id="ano">2026</span> LN Portas</span><button type="button" id="abrir-priv">Política de privacidade</button></div></div>
 </footer>
 
-<a class="wa-flut" href="#" data-wa="flutuante" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.7-.4Z"/></svg></a>
+<a class="wa-flut" href="#" data-wa="flutuante" aria-label="Conversar no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
 <div class="barra">
-  <a class="bt bt-wa" href="#" data-wa="barra">WhatsApp</a>
-  <a class="bt bt-sinal" href="#monte">Montar minha porta</a>
+  <a class="bt bt-wa" href="#" data-wa="barra"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="bt bt-navy" href="#monte">Simular porta</a>
 </div>
 
 <div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies">
   <p>Usamos cookies para medir o resultado dos nossos anúncios. Você pode aceitar ou recusar.</p>
-  <div class="acoes"><button class="bt bt-navy" type="button" id="ck-sim">Aceitar</button><button class="bt bt-claro" type="button" id="ck-nao">Recusar</button></div>
+  <div class="acoes"><button class="bt bt-navy" type="button" id="ck-sim">Aceitar</button><button class="bt bt-borda" type="button" id="ck-nao">Recusar</button></div>
 </div>
+
+<dialog class="foto" id="dlg-foto" aria-label="Foto ampliada"><form method="dialog"><button type="submit">Fechar</button></form><img id="dlg-img" alt=""></dialog>
 
 <dialog id="privacidade" aria-labelledby="t-priv">
   <h2 id="t-priv">Política de privacidade</h2>
@@ -848,6 +968,69 @@ function renderPortaJpeg(d, r, W, H) {
     if (janela) janela.location = url; else location.href = url;
     bt.disabled = false;
   });
+})();
+</script>
+<script>
+/* ===== movimento: entradas ao rolar, números, topo, galeria e troca da porta ===== */
+(function () {
+  const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // marca o que entra ao rolar (com pequeno escalonamento dentro de cada grupo)
+  const grupos = ['.cab', '.tipos > *', '.obras > *', '.difs > *', '.cond > *', '.passos', '.atende > *', '.faq', '.local > *', '.nums .num'];
+  grupos.forEach(sel => document.querySelectorAll(sel).forEach((el, i) => { el.setAttribute('data-anima', ''); el.style.setProperty('--d', (Math.min(i, 4) * 0.09) + 's'); }));
+  const vistos = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('visivel'); vistos.unobserve(e.target);
+    const b = e.target.querySelector && e.target.querySelector('b[data-num]'); if (b) contar(b);
+  }), { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('[data-anima]').forEach(el => calmo ? el.classList.add('visivel') : vistos.observe(el));
+
+  // números contando
+  document.querySelectorAll('.num b').forEach(b => {
+    const m = b.textContent.match(/^(\+?)([\d.]+)(.*)$/); if (!m) return;
+    b.dataset.num = m[2].replace(/\./g, ''); b.dataset.pre = m[1]; b.dataset.pos = m[3];
+  });
+  function contar(b) {
+    const alvo = +b.dataset.num, pre = b.dataset.pre, pos = b.dataset.pos;
+    if (calmo || !alvo) return;
+    const t0 = performance.now(), dur = 1300;
+    const passo = t => { const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      b.textContent = pre + Math.round(alvo * e).toLocaleString('pt-BR') + pos; if (k < 1) requestAnimationFrame(passo); };
+    requestAnimationFrame(passo);
+  }
+
+  // sombra no topo ao rolar
+  const topo = document.querySelector('.topo');
+  const marca = () => topo.classList.toggle('rolou', scrollY > 10);
+  addEventListener('scroll', marca, { passive: true }); marca();
+
+  // galeria ampliada
+  const dlg = document.getElementById('dlg-foto'), img = document.getElementById('dlg-img');
+  document.querySelectorAll('.zoom').forEach(b => b.addEventListener('click', () => {
+    img.src = b.dataset.foto; img.alt = b.querySelector('img').alt;
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+  }));
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+
+  // troca da porta na simulação: a nova porta "desce" sobre a anterior
+  const cv = document.getElementById('previa'); if (!cv || calmo) return;
+  const ctx = cv.getContext('2d'), orig = ctx.drawImage.bind(ctx);
+  let animando = 0, ultimaTecla = 0;
+  document.getElementById('cfg').addEventListener('input', e => { if (e.target.matches('#f-l,#f-h')) ultimaTecla = performance.now(); });
+  ctx.drawImage = function (src, x, y) {
+    if (!(src instanceof HTMLCanvasElement) || arguments.length !== 3 || performance.now() - ultimaTecla < 400 || !cv.dataset.pronto) {
+      cv.dataset.pronto = '1'; return orig.apply(null, arguments);
+    }
+    const antes = document.createElement('canvas'); antes.width = cv.width; antes.height = cv.height; antes.getContext('2d').drawImage(cv, 0, 0);
+    const id = ++animando, t0 = performance.now(), dur = 520;
+    const quadro = t => {
+      if (id !== animando) return;
+      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3), h = Math.round(cv.height * e);
+      orig(antes, 0, 0);
+      if (h > 0) orig(src, 0, 0, cv.width, h, 0, 0, cv.width, h);
+      if (k < 1) requestAnimationFrame(quadro);
+    };
+    requestAnimationFrame(quadro);
+  };
 })();
 </script>
 </body>
