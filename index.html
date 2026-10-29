@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/obra-preta-2.jpg">
+<link rel="preload" as="image" href="video/hero-poster.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"LN Portas","description":"Fabricação e instalação de portas de enrolar sob medida","telephone":"+55-11-94144-5665","address":{"@type":"PostalAddress","streetAddress":"R. Mário Colozzi, 64 – Jardim Álamo","addressLocality":"Guarulhos","addressRegion":"SP","postalCode":"07176-690","addressCountry":"BR"},"openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-13:00"],"areaServed":"Guarulhos e região"}
 </script>
@@ -94,7 +94,7 @@ section{scroll-margin-top:110px}
 .abre .ctas .pilula{min-height:50px;padding:0 28px}
 .foto-abre{max-width:1100px;margin:56px auto 0;padding:0 22px}
 .moldura{position:relative;border-radius:var(--r);overflow:hidden;background:#20242c;transform-origin:center top;will-change:transform}
-.moldura img{width:100%;aspect-ratio:1060/700;object-fit:cover;object-position:center 40%}
+.moldura video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#0b0f1a}
 .moldura .cortina{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#A4AAB3 0 13px,#868D97 13px 15px,#C2C7CF 15px 16px);box-shadow:inset 0 -20px 0 #50565F;animation:sobe 1.9s cubic-bezier(.65,0,.25,1) .55s forwards}
 .foto-abre p{font-size:12px;color:var(--tx2);margin-top:12px}
 
@@ -307,7 +307,7 @@ dialog[open]{animation:abre .4s cubic-bezier(.2,.7,.2,1)}
   .abre{padding-top:48px}
   .abre .ctas .pilula{width:100%;max-width:340px}
   .foto-abre{margin-top:40px}
-  .moldura img{aspect-ratio:1/1}
+  .moldura video{aspect-ratio:1/1}
   .nums .grade{grid-template-columns:1fr 1fr;gap:36px 16px}
   .secao{padding:72px 0}
   .modelos{grid-template-columns:1fr 1fr;gap:40px 14px}
@@ -376,10 +376,10 @@ dialog[open]{animation:abre .4s cubic-bezier(.2,.7,.2,1)}
     </div>
     <figure class="foto-abre" style="margin-bottom:0">
       <div class="moldura" id="moldura">
-        <img src="img/obra-preta-2.jpg" alt="Duas portas de enrolar pretas instaladas em um prédio comercial novo" width="1060" height="960" fetchpriority="high">
+        <video id="filme" muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" aria-label="Fabricação das portas LN: corte, pintura e montagem" width="1920" height="1080"></video>
         <div class="cortina" aria-hidden="true"></div>
       </div>
-      <p>Portas automáticas instaladas pela LN em Guarulhos e região.</p>
+      <p>Da chapa de aço à porta instalada: tudo feito pela LN, em Guarulhos.</p>
     </figure>
   </section>
 
@@ -968,6 +968,17 @@ function renderPortaJpeg(d, r, W, H) {
 <script>
 /* ===== movimento ===== */
 (function () {
+
+  /* vídeo de abertura: 4K em telas grandes, 1080p no celular */
+  (function(){
+    const v=document.getElementById('filme'); if(!v) return;
+    const c=navigator.connection||{};
+    const grande=Math.max(screen.width,screen.height)*(window.devicePixelRatio||1)>=2400 && innerWidth>=1024 && !c.saveData;
+    v.src='video/'+(grande?'hero-4k.mp4':'hero-1080.mp4');
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    v.autoplay=true; const tenta=()=>v.play().catch(()=>{}); tenta();
+    document.addEventListener('visibilitychange',()=>{document.hidden?v.pause():tenta()});
+  })();
   const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const grupos = ['.cab', '.modelos > *', '.mosaico > *', '.destaque > *', '.trilho .obra', '.passos > *', '.faq', '.onde > *', '.nums .num', '.final .wrap > *'];
   grupos.forEach(sel => document.querySelectorAll(sel).forEach((el, i) => { el.setAttribute('data-anima', ''); el.style.setProperty('--d', (Math.min(i, 4) * 0.08) + 's'); }));
