@@ -6,6 +6,7 @@
 <title>Porta de enrolar sob medida em Guarulhos | LN Portas</title>
 <meta name="description" content="Porta de enrolar automática ou manual, fabricada sob medida em Guarulhos. Medição no local, instalação e 12 meses de garantia. Peça seu orçamento pelo WhatsApp.">
 <meta name="theme-color" content="#0B1C5E">
+<meta name="color-scheme" content="light only">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
@@ -16,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="video/hero-poster.jpg">
+
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"LN Portas","description":"Fabricação e instalação de portas de enrolar sob medida","telephone":"+55-11-94144-5665","address":{"@type":"PostalAddress","streetAddress":"R. Mário Colozzi, 64 – Jardim Álamo","addressLocality":"Guarulhos","addressRegion":"SP","postalCode":"07176-690","addressCountry":"BR"},"openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-13:00"],"areaServed":"Guarulhos e região"}
 </script>
@@ -86,17 +87,19 @@ section{scroll-margin-top:110px}
 .local nav a.pilula{color:#fff}
 .local nav a.pilula:hover{text-decoration:none}
 
-/* abertura */
-.abre{padding:72px 0 0;text-align:center;overflow:hidden}
-.abre h1{font-size:clamp(48px,8vw,96px);font-weight:600;letter-spacing:-.045em}
-.abre .linha2{font-size:clamp(22px,2.8vw,32px);font-weight:500;color:var(--tx);margin-top:14px;letter-spacing:-.02em}
-.abre .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.abre .ctas .pilula{min-height:50px;padding:0 28px}
-.foto-abre{max-width:1100px;margin:56px auto 0;padding:0 22px}
-.moldura{position:relative;border-radius:var(--r);overflow:hidden;background:#20242c;transform-origin:center top;will-change:transform}
-.moldura video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#0b0f1a}
-.moldura .cortina{position:absolute;inset:0;background:repeating-linear-gradient(180deg,#A4AAB3 0 13px,#868D97 13px 15px,#C2C7CF 15px 16px);box-shadow:inset 0 -20px 0 #50565F;animation:sobe 1.9s cubic-bezier(.65,0,.25,1) .55s forwards}
-.foto-abre p{font-size:12px;color:var(--tx2);margin-top:12px}
+/* abertura com vídeo */
+.abre{position:relative;min-height:max(560px,calc(100svh - 100px));display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#05070d;color:#fff;isolation:isolate}
+.abre-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:abre 1.6s cubic-bezier(.2,.7,.2,1) both}
+.abre-veu{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,6,16,.55) 0%,rgba(3,6,16,.25) 40%,rgba(3,6,16,.35) 70%,rgba(3,6,16,.8) 100%)}
+.abre-texto{padding:64px 22px}
+.abre h1{font-size:clamp(48px,8vw,104px);font-weight:600;letter-spacing:-.045em;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.abre .linha2{font-size:clamp(21px,2.8vw,32px);font-weight:500;color:rgba(255,255,255,.88);margin-top:14px;letter-spacing:-.02em;text-shadow:0 1px 20px rgba(0,0,0,.4)}
+.abre .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.abre .ctas .pilula{min-height:52px;padding:0 30px}
+.p-branca{background:#fff;color:#0B1C5E!important;font-weight:600}
+.p-branca:hover{background:#eef1f7;text-decoration:none}
+.p-vidro{background:rgba(255,255,255,.12);color:#fff!important;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.p-vidro:hover{background:rgba(255,255,255,.22);text-decoration:none}
 
 /* faixa de números */
 .nums{padding:72px 0 88px}
@@ -281,8 +284,6 @@ dialog[open]{animation:abre .4s cubic-bezier(.2,.7,.2,1)}
 .modelo:hover .amostra i{transform:translateY(-6px) scale(1.02)}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .moldura .cortina{display:none}
-  .moldura{transform:none!important}
   .entra,[data-anima]{opacity:1;transform:none;animation:none;transition:none}
   .wa-flut::after{animation:none}
   .zoom:hover img,.modelo:hover .amostra i{transform:none}
@@ -304,10 +305,8 @@ dialog[open]{animation:abre .4s cubic-bezier(.2,.7,.2,1)}
   footer .cols{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
-  .abre{padding-top:48px}
   .abre .ctas .pilula{width:100%;max-width:340px}
   .foto-abre{margin-top:40px}
-  .moldura video{aspect-ratio:1/1}
   .nums .grade{grid-template-columns:1fr 1fr;gap:36px 16px}
   .secao{padding:72px 0}
   .modelos{grid-template-columns:1fr 1fr;gap:40px 14px}
@@ -366,21 +365,16 @@ dialog[open]{animation:abre .4s cubic-bezier(.2,.7,.2,1)}
 
 <main id="inicio">
   <section class="abre" aria-labelledby="titulo">
-    <div class="wrap">
+    <video id="filme" class="abre-video" muted loop playsinline  preload="metadata" aria-hidden="true"></video>
+    <div class="abre-veu" aria-hidden="true"></div>
+    <div class="wrap abre-texto">
       <h1 id="titulo" class="entra" style="--d:.05s">Porta de enrolar LN.</h1>
       <p class="linha2 entra" style="--d:.2s">Sob medida. Feita na nossa fábrica.<br>Instalada por quem fabricou.</p>
       <div class="ctas entra" style="--d:.35s">
-        <a class="pilula p-azul" href="#" data-wa="abertura"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento</a>
-        <a class="pilula p-borda" href="#monte">Simular minha porta</a>
+        <a class="pilula p-branca" href="#" data-wa="abertura"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento</a>
+        <a class="pilula p-vidro" href="#monte">Simular minha porta</a>
       </div>
     </div>
-    <figure class="foto-abre" style="margin-bottom:0">
-      <div class="moldura" id="moldura">
-        <video id="filme" muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" aria-label="Fabricação das portas LN: corte, pintura e montagem" width="1920" height="1080"></video>
-        <div class="cortina" aria-hidden="true"></div>
-      </div>
-      <p>Da chapa de aço à porta instalada: tudo feito pela LN, em Guarulhos.</p>
-    </figure>
   </section>
 
   <div class="nums">
@@ -974,7 +968,9 @@ function renderPortaJpeg(d, r, W, H) {
     const v=document.getElementById('filme'); if(!v) return;
     const c=navigator.connection||{};
     const grande=Math.max(screen.width,screen.height)*(window.devicePixelRatio||1)>=2400 && innerWidth>=1024 && !c.saveData;
-    v.src='video/'+(grande?'hero-4k.mp4':'hero-1080.mp4');
+    const retrato=matchMedia('(max-aspect-ratio: 1/1)').matches;
+    if(retrato){v.poster='video/hero-poster-vertical.jpg';v.src='video/hero-vertical.mp4'}
+    else{v.poster='video/hero-poster.jpg';v.src='video/'+(grande?'hero-4k.mp4':'hero-1080.mp4')}
     if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     v.autoplay=true; const tenta=()=>v.play().catch(()=>{}); tenta();
     document.addEventListener('visibilitychange',()=>{document.hidden?v.pause():tenta()});
